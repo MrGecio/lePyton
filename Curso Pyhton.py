@@ -133,6 +133,7 @@ Pyhton te permite desempacar los valores a una variable
 
 '''
 
+print("\n Espaciaol")
 fruits =["apple", "banana", " caca"]
 x, y, z = fruits
 
@@ -142,7 +143,60 @@ print(y)
 print(z)
 
 
+#Se le pueden asignar el mismo valor a multiples varibales 
+
+x = y = z = "Orange"
+print("\n"+x)
+print(y)
+print(z)
+
+#Podemos guardar cadenas de caracteres '
+x = "\nPython is awesome"
+print(x)
+
+x ="Python"
+y="is"
+z="awesome"
+print(x,y,z)
+
+# o
+
+print(x+y+z)
+
+
+
+#Variables Globales
+
+x = "awesome :) "
+
+def myfunc():
+    print("Python is " + x)
+    
+myfunc()
+
+
+#Variables locales 
+
+x = "awesome :( "
+
+def myfunc2():
+    x="fantastico"
+    print("Python is " + x)
+    
+myfunc2()
+
+print("Piton es "+ x)
 
 
 
 
+#Para que las variables creadas dentro de funciones se lean 
+#De de forma global se debe usar    global
+
+
+def myfunc3():
+    global x
+    x="xd"
+    
+myfunc3()
+print("\nPython es "+x)
