@@ -83,6 +83,10 @@ print(type(z))
 
 
 
+
+
+
+
 print("\n")
 
 #Podemos convertir el tipo de nuestros numeros 

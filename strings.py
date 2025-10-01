@@ -108,9 +108,58 @@ print(a.lower())
 
 
 #Remover los espacios en blanco 
+a = "     Hello world amigos mios       "
 
 print(a)
 print(a.strip())
 
+
+#Remplazar caracteres del strings por otro en el string 
+
+a = "Hello, World!"
+print(a.replace("H", "J"))
+
+#podemos semarar el string en partes para ser convertidos en 
+#una lista de substring 0
+
+a="Hello, worlds"
+print(a.split(","))
+
+#Podemos concatenar strings para juntarlos 
+
+a = "Hola"
+b = "amiko"
+c= a+"  " +b
+
+print(c)
+
+#en stri g no se pueden conbinar con otros tipos de datos 
+"""
+age = 63
+txt = " hola yo tengo : " +age
+print(txt)
+
+"""
+
+#Esto da error 
+
+
+
+
+
+#Para combinar ocupamos los:
+    
+"""
+
+    Fstring 
+    
+    usamos los place holders {}
+    
+"""
+
+
+age = 63
+txt = f" hola yo tengo : {age}" 
+print(txt)
 
 
